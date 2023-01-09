@@ -1,22 +1,34 @@
-# Python program to demonstrate
-# Creation of Array, Time Complexity O(1) constant time
+from array import *
+import array as arr #arr is an import
 
-# importing "array" for array creations
-import array as arr
+# https://www.educba.com/arrays-in-python/
+# typical array index operations
+a=arr.array('i', [10 , 20 ,30] ) #declare array
+print("Element at 0th index: " , a[0])
+print("Element at 1st  index: " , a[1])
+print("Element at 2nd index: " , a[2])
 
-# creating an array with integer type
-a = arr.array('i', [1, 2, 3])
+#return the value of typecode() in the array
+# array.typecode() #syntax
 
-# printing original array
-print ("The new created array is : ", end =" ")
-for i in range (0, 3):
-	print (a[i], end =" ")
-print()
+a1 = arr.array('i', [100,200,300] )
+#printing array with method
+print(a1.typecode)
 
-# creating an array with double type
-b = arr.array('d', [2.5, 3.2, 3.3])
+# insert() syntax
+# array.insert(index, element)
+a = arr.array('i', [100,200,300])
+#inserting a value of 400 to after index 2
+a.insert(3, 400);
+#looping through array a
+for i in a:
+print(i)
 
-# printing original array
-print ("The new created array is : ", end =" ")
-for i in range (0, 3):
-	print (b[i], end =" ")
+#creating array
+a = arr.array('i', [100,200,300])
+#inserting a value of 400 to after index 2
+a.insert(3, 400);
+#looping through array a
+for i in a:
+print(i)
+
